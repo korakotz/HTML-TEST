@@ -1,0 +1,44 @@
+.search {
+    width: 150px;
+    border: 0;
+    margin-right: 10px;
+    padding-left: 10px;
+
+}
+p {
+    margin-bottom: 5px;
+}
+button.btn.btn-outline {
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.nav-icon {
+    color:white;
+}
+a.nav-link {
+    color: #111;
+}
+li.nav-item.active > a {
+    color: red;
+}
+li.nav-item {
+    margin-right: 10px;
+}
+.hotline {
+    margin: 10px 0;
+}
+.hotline > p {
+    display: inline;
+}
+.hot{
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+.readmore{
+    font-size: 11px;
+    margin-top: 5px;
+}
