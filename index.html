@@ -1,5 +1,7 @@
+<!doctype html>
 <html>
 <header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -7,43 +9,41 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1e/css/swiper.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.esm.bundle.js"></script>
 </header>
 
-<body>
-
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.1&appId=593446834182043&autoLogAppEvents=1';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+<body class="cbp-spmenu-push">
 
     <div style="background-color:black">
         <div class="container pt-3 pb-3">
             <div class="row">
-                <div class="col-lg-5 col-sm-5">
-                    <img src="https://via.placeholder.com/100x60" alt="">
+                <div class="col-5">
+                    <img class="img-fliud" src="https://via.placeholder.com/100x60" alt="">
                 </div>
-                <div class="col-lg-7 col-sm-7">
+                <div class="col-lg-7 col-sm-7 hidden-xs">
                     <div class="row">
                         <div class="col-sm-4" style="font-size:12px; text-align:right; line-height: 20px; color: #fff; border-right: 1px solid white;">
-                            <p>องค์กรต่อต้านคอร์รัปชั่น (ประเทศไทย)</p>
-                            <p>วันที่ 13 กันยายน 2561</p>
+                            <p style="font-size:12px;">องค์กรต่อต้านคอร์รัปชั่น (ประเทศไทย)</p>
+                            <p style="font-size:12px;">วันที่ 13 กันยายน 2561</p>
                         </div>
                         <div class="col-sm-5" style="border-right: 1px solid white;">
                             <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="ค้นหา" aria-label="Search">
+                                <input class="form-control" type="search" placeholder="ค้นหา" aria-label="Search">
                                 <button class="btn btn-outline" type="submit"><i class="fas fa-search"></i></button>
                             </form>
                         </div>
                         <div class="col-sm-2" style="border-right: 1px solid white;">
                             <div class="row">
-                                <div class="col text-center mt-3">
+                                <div class="col-6 text-center mt-2">
                                     <i class="fab fa-facebook-square fa-1x nav-icon"></i>
                                 </div>
-                                <div class="col text-center mt-3">
+                                <div class="col-6 text-center mt-2">
                                     <i class="fab fa-youtube fa-1x nav-icon"></i>
                                 </div>
                             </div>
@@ -53,12 +53,32 @@
                         </div>
                     </div>
                 </div>
+                <!-- Mobile Menu -->
+                <div class="col-7 mobile-menu">
+                    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control menu-search" placeholder="ค้นหา" type="search" aria-label="Search">
+                        </form>
+                        <p style="color:white;border-bottom: 1px solid #111;padding: 20px 0px;" class="text-center">Menu</p>
+                        <a href="#">เมนูภาษาไทย <span class="float-right">></span></a>
+                        <a href="#">เมนูภาษาไทย <span class="float-right">></span></a>
+                        <a href="#">เมนูภาษาไทย <span class="float-right">></span></a>
+                        <a href="#">เมนูภาษาไทย <span class="float-right">></span></a>
+                        <p style="background-color:#444;color:white;border-bottom: 1px solid #111;padding: 10px 0px;" class="text-center">เลือกภาษา</p>
+                        <a href="#"><i class="fas fa-check"></i> ไทย</a>
+                        <a href="#">English</a>
+                        <p style="background-color:#444;color:white;border-bottom: 1px solid #111;padding: 10px 0px;" class="text-center">FOLLOW US</p>
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+                    </nav>
+                    <button id="showRightPush" class="float-right"><i class="fas fa-bars fa-3x"></i></button>
+                </div>
             </div>
         </div>
     </div>
     <div style="border-bottom:5px solid gray">
         <div class="container">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg hidden-xs">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -91,27 +111,45 @@
             </nav>
         </div>
     </div>
-    <section id="Slider">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://via.placeholder.com/800x400" alt="First slide">
 
+    <section id="banner-page">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/2400x300" class="img-fliud">
+                    <div class="container swip-banner-description hidden-xs">
+                        <div class="intro-swiper hidden-xs">
+                            <h3>หน้าหลัก</h3>
+                        </div><!-- intro-swiper -->
+                    </div>
                 </div>
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination "></div>
         </div>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+        </script>
     </section>
+
     <section id="one">
         <div class="container">
             <div class="hotline">
                 <span class="hot">HOT</span>
-                <marquee>A scrolling text created with HTML Marquee element.</marquee>
+
+                <marquee onmouseover="this.stop()" onmouseout="this.start()"> <a style="color:red;" href="#">scrolling
+                        text created with HTML Marquee element.</a></marquee>
+
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="white-background">
                         <div class="header-red">
                             <h2 class="header">ประเด็นร้อน <span class="float-right readmore"><a class="readmore" href="#">อ่านเพิ่มเติม</a></span></h2>
@@ -119,7 +157,7 @@
                         <div class="article">
                             <div class="row pt2">
                                 <div class="col-6">
-                                    <img src="https://via.placeholder.com/150x100" alt="">
+                                    <img class="img-fluid" src="https://via.placeholder.com/550x400" alt="">
                                 </div>
                                 <div class="col-6">
                                     <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
@@ -133,7 +171,7 @@
                         <div class="article">
                             <div class="row pt2">
                                 <div class="col-6">
-                                    <img src="https://via.placeholder.com/150x100" alt="">
+                                    <img class="img-fluid" src="https://via.placeholder.com/550x400" alt="">
                                 </div>
                                 <div class="col-6">
                                     <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
@@ -147,7 +185,7 @@
                         <div class="article">
                             <div class="row pt2">
                                 <div class="col-6">
-                                    <img src="https://via.placeholder.com/150x100" alt="">
+                                    <img class="img-fluid" src="https://via.placeholder.com/550x400" alt="">
                                 </div>
                                 <div class="col-6">
                                     <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
@@ -161,7 +199,7 @@
                         <div class="article">
                             <div class="row pt2">
                                 <div class="col-6">
-                                    <img src="https://via.placeholder.com/150x100" alt="">
+                                    <img class="img-fluid" src="https://via.placeholder.com/550x400" alt="">
                                 </div>
                                 <div class="col-6">
                                     <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
@@ -175,7 +213,7 @@
                         <div class="article">
                             <div class="row pt2">
                                 <div class="col-6">
-                                    <img src="https://via.placeholder.com/150x100" alt="">
+                                    <img class="img-fluid" src="https://via.placeholder.com/550x400" alt="">
                                 </div>
                                 <div class="col-6">
                                     <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
@@ -187,78 +225,69 @@
                         </div>
                     </div>
                     <hr style="border-bottom: 5px solid red; margin-top:0;">
-                    <a href="#">
-                        <img class="img-fluid" src="https://via.placeholder.com/350x200" alt="">
-                    </a>
+                    <div class="banner-1 text-center">
+                        <a href="#">
+                            <img class="img-fluid" src="https://via.placeholder.com/550x400" alt="">
+                        </a>
+                    </div>
+
                     <hr style="border-bottom: 5px solid red; margin-top:10;">
                 </div>
 
-                <div class="col-5">
+                <div class="col-lg-5">
                     <div class="white-background">
                         <div class="header-black">
                             <h2 class="header"><i class="fas fa-users"></i>&nbsp&nbsp&nbspกิจกรรม <span class="float-right readmore"><a
                                         class="readmore" href="#">อ่านเพิ่มเติม</a></span></h2>
                         </div>
                         <div class="article2">
-                            <div class="row pt2">
-                                <div class="thumnail">
-                                    <img src="https://via.placeholder.com/550x400" alt="">
-                                    <h3 class="article-title absolute">ARTICLE TITLE ARTICLE TITLE</h3>
-                                    <div class="description">
-                                        <p class="date">15 ก.ย 2561</p>
-                                        <p class="short-description">Article shot description</p>
-                                        <a class="float-right article-readmore" href="#">อ่านเพิ่ม</a>
-                                    </div>
+
+                            <div class="thumnail">
+                                <img class="img-fluid" src="https://via.placeholder.com/550x400" alt="">
+                                <h3 class="article-title absolute">ARTICLE TITLE ARTICLE TITLE</h3>
+                                <div class="description">
+                                    <p class="date">15 ก.ย 2561 <span style="color:red;">Update</span></p>
+                                    <p class="short-description">Article shot description</p>
+                                    <a class="float-right article-readmore" href="#">อ่านเพิ่ม</a>
                                 </div>
                             </div>
+
                         </div>
                         <div class="header-black" style="margin: 0px 15px;">
                             <h2 class="header"><i class="fas fa-bullhorn"></i>&nbsp&nbsp&nbspภาพสื่อ
                                 และการประชาสัมพันธ์<span class="float-right readmore"><a class="readmore" href="#">อ่านเพิ่มเติม</a></span></h2>
                         </div>
                         <div class="article2">
-                            <div class="row pt2">
-                                <div class="thumnail">
-                                    <img src="https://via.placeholder.com/550x400" alt="">
-                                    <h3 class="article-title absolute">ARTICLE TITLE ARTICLE TITLE</h3>
-                                    <div class="description">
-                                        <p class="date">15 ก.ย 2561</p>
-                                        <p class="short-description">Article shot description</p>
-                                        <a class="float-right article-readmore" href="#">อ่านเพิ่ม</a>
-                                    </div>
+
+                            <div class="thumnail">
+                                <img class="img-fluid" src="https://via.placeholder.com/550x400" alt="">
+                                <h3 class="article-title absolute">ARTICLE TITLE ARTICLE TITLE</h3>
+                                <div class="description">
+                                    <p class="date">15 ก.ย 2561 <span style="color:red;">Update</span></p>
+                                    <p class="short-description">Article shot description</p>
+                                    <a class="float-right article-readmore" href="#">อ่านเพิ่ม</a>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-lg-3 hidden-xs">
                     <div class="header-black">
                         <h2 class="header">โซเชียลมีเดีย <span class="float-right readmore"><a class="readmore" href="#">อ่านเพิ่มเติม</a></span></h2>
                     </div>
                     <div class="social-warpper">
-                        <h3 class="article-title" style="color:red;padding-top: 20px;">ACT</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="300"
-                            data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                            data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                        </div>
+                        <h3 class="" style="color:red;padding-top: 20px;">ACT</h3>
+                        <img class="img-fluid mb-3" src="https://via.placeholder.com/550x400" alt="">
                     </div>
                     <div class="social-warpper">
-                        <h3 class="article-title" style="color:red;padding-top: 20px;">หมาเฝ้าบ้าน</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="300"
-                            data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                            data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                        </div>
+                        <h3 class="" style="color:red;padding-top: 20px;">หมาเฝ้าบ้าน</h3>
+                        <img class="img-fluid mb-3" src="https://via.placeholder.com/550x400" alt="">
                     </div>
                     <div class="social-warpper">
-                        <h3 class="article-title" style="color:red;padding-top: 20px;">YOUTH2020</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="300"
-                            data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                            data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                        </div>
+                        <h3 class="" style="color:red;padding-top: 20px;">YOUTH2020</h3>
+                        <img class="img-fluid mb-3" src="https://via.placeholder.com/550x400" alt="">
                     </div>
                 </div>
             </div>
@@ -273,10 +302,10 @@
             </div>
             <div class="section-warpper">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="blog-warpper">
                             <div class="blog-img-warpper">
-                                <img class="img-fluid" src="https://via.placeholder.com/350x250" alt="">
+                                <img class="img-fluid" src="https://via.placeholder.com/850x450" alt="">
                             </div>
                             <div class="blog-description">
                                 <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
@@ -286,10 +315,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="blog-warpper">
                             <div class="blog-img-warpper">
-                                <img class="img-fluid" src="https://via.placeholder.com/350x250" alt="">
+                                <img class="img-fluid" src="https://via.placeholder.com/850x450" alt="">
                             </div>
                             <div class="blog-description">
                                 <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
@@ -299,10 +328,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="blog-warpper">
                             <div class="blog-img-warpper">
-                                <img class="img-fluid" src="https://via.placeholder.com/350x250" alt="">
+                                <img class="img-fluid" src="https://via.placeholder.com/850x450" alt="">
                             </div>
                             <div class="blog-description">
                                 <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
@@ -325,7 +354,7 @@
             </div>
             <div class="activity-section-warpper">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="activity-content-warpper">
                             <a href="#">
                                 <div class="img-background overlay" style="background-image: url(https://via.placeholder.com/550x150);">
@@ -334,27 +363,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="activity-content-warpper">
-                            <a href="#">
-                                <div class="img-background overlay" style="background-image: url(https://via.placeholder.com/550x150);">
-                                </div>
-                                <h3 class="article-title absolute2">TITLE</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="activity-content-warpper">
-                            <a href="#">
-                                <div class="img-background overlay" style="background-image: url(https://via.placeholder.com/550x150);">
-                                </div>
-                                <h3 class="article-title absolute2">TITLE</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="activity-content-warpper">
                             <a href="#">
                                 <div class="img-background overlay" style="background-image: url(https://via.placeholder.com/550x150);">
@@ -365,7 +374,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="activity-content-warpper">
                             <a href="#">
                                 <div class="img-background overlay" style="background-image: url(https://via.placeholder.com/550x150);">
@@ -374,7 +383,27 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
+                        <div class="activity-content-warpper">
+                            <a href="#">
+                                <div class="img-background overlay" style="background-image: url(https://via.placeholder.com/550x150);">
+                                </div>
+                                <h3 class="article-title absolute2">TITLE</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="activity-content-warpper">
+                            <a href="#">
+                                <div class="img-background overlay" style="background-image: url(https://via.placeholder.com/550x150);">
+                                </div>
+                                <h3 class="article-title absolute2">TITLE</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
                         <div class="activity-content-warpper">
                             <a href="#">
                                 <div class="img-background overlay" style="background-image: url(https://via.placeholder.com/550x150);">
@@ -396,53 +425,248 @@
             </div>
             <div class="donate-section-warpper">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="donate-content-warpper">
                             <a href="#">
-                                <img class="img-fluid" src="https://via.placeholder.com/550x200" alt="">
+                                <img class="img-fluid" src="https://via.placeholder.com/850x250" alt="">
                                 <h3 class="donate-title absolute3 text-center">หมาเฝ้าบ้าน</h3>
                             </a>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="donate-content-warpper">
                             <a href="#">
-                                <img class="img-fluid" src="https://via.placeholder.com/550x200" alt="">
+                                <img class="img-fluid" src="https://via.placeholder.com/850x250" alt="">
                                 <h3 class="donate-title absolute3 text-center">บริจาคทุนทรัพย์</h3>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                        <div class="col-6">
-                            <div class="donate-content-warpper">
-                                <a href="#">
-                                    <img class="img-fluid" src="https://via.placeholder.com/550x200" alt="">
-                                    <h3 class="donate-title absolute3 text-center">ร่วมเป็นหนึ่งในผู้สังเกตุการณ์คุณธรรม (IP)</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="donate-content-warpper">
-                                <a href="#">
-                                    <img class="img-fluid" src="https://via.placeholder.com/550x200" alt="">
-                                    <h3 class="donate-title absolute3 text-center">สนับสนุนสินค้าที่ระลึก</h3>
-                                </a>
-                            </div>
+                    <div class="col-lg-6">
+                        <div class="donate-content-warpper">
+                            <a href="#">
+                                <img class="img-fluid" src="https://via.placeholder.com/850x250" alt="">
+                                <h3 class="donate-title absolute3 text-center">ร่วมเป็นหนึ่งในผู้สังเกตุการณ์คุณธรรม
+                                    (IP)</h3>
+                            </a>
                         </div>
                     </div>
+                    <div class="col-lg-6">
+                        <div class="donate-content-warpper">
+                            <a href="#">
+                                <img class="img-fluid" src="https://via.placeholder.com/850x250" alt="">
+                                <h3 class="donate-title absolute3 text-center">สนับสนุนสินค้าที่ระลึก</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="five">
         <div class="container">
-                <div class="header-black">
-                        <h2 class="header"><i class="fas fa-bullhorn"></i>&nbsp&nbsp&nbspมัลติมีเดีย <span class="float-right readmore"><a
-                                    class="readmore" href="#">อ่านเพิ่มเติม</a></span></h2>
+            <div class="header-black">
+                <h2 class="header"><i class="fas fa-bullhorn"></i>&nbsp&nbsp&nbspมัลติมีเดีย <span class="float-right readmore"><a
+                            class="readmore" href="#">อ่านเพิ่มเติม</a></span></h2>
+            </div>
+            <div class="multimedia-section-warpper">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="blog-warpper">
+                            <div class="blog-img-warpper">
+                                <img class="img-fluid" src="https://via.placeholder.com/850x350" alt="">
+                            </div>
+                            <div class="blog-description">
+                                <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
+                                <p class="blog-short-description">Article shot description</p>
+                                <p class="blog-date">15 ก.ย 2561</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="blog-warpper">
+                                    <div class="blog-img-warpper">
+                                        <img class="img-fluid" src="https://via.placeholder.com/850x350" alt="">
+                                    </div>
+                                    <div class="blog-description">
+                                        <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
+                                        <p class="blog-short-description">Article shot description</p>
+                                        <p class="blog-date">15 ก.ย 2561</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog-warpper">
+                                    <div class="blog-img-warpper">
+                                        <img class="img-fluid" src="https://via.placeholder.com/850x350" alt="">
+                                    </div>
+                                    <div class="blog-description">
+                                        <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
+                                        <p class="blog-short-description">Article shot description</p>
+                                        <p class="blog-date">15 ก.ย 2561</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="blog-warpper">
+                                    <div class="blog-img-warpper">
+                                        <img class="img-fluid" src="https://via.placeholder.com/850x350" alt="">
+                                    </div>
+                                    <div class="blog-description">
+                                        <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
+                                        <p class="blog-short-description">Article shot description</p>
+                                        <p class="blog-date">15 ก.ย 2561</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog-warpper">
+                                    <div class="blog-img-warpper">
+                                        <img class="img-fluid" src="https://via.placeholder.com/850x350" alt="">
+                                    </div>
+                                    <div class="blog-description">
+                                        <h3 class="article-title">ARTICLE TITLE ARTICLE TITLE</h3>
+                                        <p class="blog-short-description">Article shot description</p>
+                                        <p class="blog-date">15 ก.ย 2561</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="six">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <img class="img-fluid" src="https://via.placeholder.com/100x60" alt="">
+                        <p class="mt-4">
+                            องค์กรต่อต้านคอร์รัปชัน (ประเทศไทย)
+                            Anti-Corruption Organization of Thailand
+                            44 อาคารศรีจุลทรัพย์ ถนนพระราม 1
+                            แขวงรองเมือง เขตปทุมวัน กรุงเทพฯ 10330
+                        </p>
+                        <p class="mt-2">
+                            โทร. 02 613-8863 ถึง 66
+                        </p>
+                        <p>แฟกซ์ 02 613-6600</p>
+                        <img class="img-fluid mt-3" src="https://via.placeholder.com/100x60" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h4 class="footer-title">
+                                    เกี่ยวกับเรา
+                                </h4>
+                                <ol>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                </ol>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4 class="footer-title">
+                                    งานของเรา
+                                </h4>
+                                <ol>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+
+                                </ol>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4 class="footer-title">
+                                    ภาคีของเรา
+                                </h4>
+                                <ol>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h4 class="footer-title">
+                                    ต่อสู้ร่วมกับเรา
+                                </h4>
+                                <ol>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+
+                                </ol>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4 class="footer-title">
+                                    ข้อมูลสำคัญของการต่อต้านคอร์รัปชัน
+                                </h4>
+                                <ol>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                </ol>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4 class="footer-title">
+                                    กิจกรรมสำคัญของเรา
+                                </h4>
+                                <ol>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                    <li>เกี่ยวกับองค์กร ประวัติ</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>2559 © องค์กรต่อต้านคอร์รัปชัน (ประเทศไทย)</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+    <script src="classie.js"></script>
+    <script>
+        var
+            menuRight = document.getElementById('cbp-spmenu-s2'),
+            showRightPush = document.getElementById('showRightPush'),
+            body = document.body;
+
+        showRightPush.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(body, 'cbp-spmenu-push-toleft');
+            classie.toggle(menuRight, 'cbp-spmenu-open');
+            disableOther('showRightPush');
+        };
+
+        function disableOther(button) {
+            if (button !== 'showRightPush') {
+                classie.toggle(showRightPush, 'disabled');
+            }
+        }
+    </script>
 </body>
 
 </html>
