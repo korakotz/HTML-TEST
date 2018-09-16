@@ -20,9 +20,6 @@
     .container {
         max-width: 1140px;
     }
-    .mobile-menu{
-        display: block !important;
-    }
 }
 @font-face {
     font-family: 'SukhumvitSet-Bold';
